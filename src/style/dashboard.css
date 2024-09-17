@@ -1,0 +1,48 @@
+/* dashboard.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #ddd;
+  height: 100vh;
+}
+
+.main-content {
+  padding-top: 20px;
+}
+
+.upload-card {
+  margin-top: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .main-content {
+    padding-top: 10px;
+  }
+
+  .dropzone {
+    padding: 15px;
+  }
+
+  .upload-card {
+    margin-top: 15px;
+  }
+}
